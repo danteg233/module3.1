@@ -1,7 +1,8 @@
 package com.company;
 
 import com.epam.tat.module4.Calculator;
-import org.junit.BeforeClass;
+import org.testng.annotations.BeforeClass;
+
 
 public class CalculatorTest {
     protected Calculator calculator;

@@ -1,9 +1,13 @@
-<!DOCTYPE suite SYSTEM>
-<suite name = "Calculator" verbose = "1" parallel="false">
-    <test name ="AddSubTest">
+<suite name="CalculatorTests">
+    <test name="testngTest">
         <classes>
-            <class name="com.company.AddAndSubCalTest">
-            </class>
+            <class name="com.company.CosTest"/>
+            <class name="com.company.CtgTest"/>
+            <class name="com.company.TgTest"/>
+
+            <class name="com.company.MulAndDivTest"/>
+            <class name="com.company.SqrtTest"/>
+            <class name="com.company.AddAndSubCalTest" />
         </classes>
     </test>
 </suite>

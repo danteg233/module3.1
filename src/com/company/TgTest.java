@@ -15,7 +15,7 @@ public class TgTest {
         calculator = new Calculator();
     }
 
-    @Test(dataProvider = "tgDataProvider")
+    @Test(groups = "Value from DataProvider", dataProvider = "tgDataProvider")
     @Parameters({"a", "b", "expected"})
     public void mulTest(double a, double expected){
         double sum = calculator.tg(a);

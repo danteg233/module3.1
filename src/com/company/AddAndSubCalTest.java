@@ -24,19 +24,19 @@ public class AddAndSubCalTest extends CalculatorTest{
     }
 
 
-    @DataProvider(name ="sumDataProvider")
-    public Object[][] sumDataProvider(){
-        return new Object[][]{
-                {1,1,2},
-                {2,2,4},
-                {0,1,1}};
-    }
-
-    @DataProvider(name ="subDataProvider")
-    public Object[][] subDataProvider(){
-        return new Object[][]{
-                {1,1,0},
-                {13,3,10},
-                {0,1,-1}};
-    }
+//    @DataProvider(name ="sumDataProvider")
+//    public Object[][] sumDataProvider(){
+//        return new Object[][]{
+//                {1,1,2},
+//                {2,2,4},
+//                {0,1,1}};
+//    }
+//
+//    @DataProvider(name ="subDataProvider")
+//    public Object[][] subDataProvider(){
+//        return new Object[][]{
+//                {1,1,0},
+//                {13,3,10},
+//                {0,1,-1}};
+//    }
 }

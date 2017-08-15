@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class CtgTest extends CalculatorTest{
 
-    @Test(dataProvider = "ctgDataProvider")
+    @Test(groups = "Value from DataProvider", dataProvider = "ctgDataProvider")
     @Parameters({"a", "b", "expected"})
     public void mulTest(double a, double expected){
         double sum = calculator.ctg(a);
