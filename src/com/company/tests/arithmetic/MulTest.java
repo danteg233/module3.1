@@ -1,6 +1,6 @@
-package com.company.arithmetic;
+package com.company.tests.arithmetic;
 
-import com.company.CalculatorTest;
+import com.company.tests.CalculatorTest;
 import com.epam.tat.module4.Calculator;
 import org.testng.Assert;
 import org.testng.annotations.*;
