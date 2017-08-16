@@ -1,13 +1,40 @@
-<suite name="CalculatorTests">
-    <test name="testngTest">
-        <classes>
-            <class name="com.company.CosTest"/>
-            <class name="com.company.CtgTest"/>
-            <class name="com.company.TgTest"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-            <class name="com.company.MulAndDivTest"/>
-            <class name="com.company.SqrtTest"/>
-            <class name="com.company.AddAndSubCalTest" />
+<suite name="Suite1">
+    <test name="Arithmetic tests" parallel="true" thread-count="4">
+        <parameter name="a" value='5'/>
+        <parameter name="b" value='5'/>
+        <parameter name="expected" value="10"/>
+        <classes>
+            <class name="com.company.tests.arithmetic.AddTest" />
+            <class name="com.company.tests.arithmetic.SubTest" />
+            <class name="com.company.tests.arithmetic.MulTest" />
+            <class name="com.company.tests.arithmetic.DivTest" />
+        </classes>
+    </test>
+
+    <test name="Test(PosNegPowSqrtTest)" parallel="true" thread-count="4">
+        <classes>
+            <class name="com.company.tests.another.IsPositiveTest"/>
+            <class name="com.company.tests.another.IsNegativeTest"/>
+            <class name="com.company.tests.another.PowTest"/>
+            <class name="com.company.tests.another.SqrtTest"/>
+        </classes>
+    </test>
+
+    <test name="Trigonometric tests">
+        <groups>
+            <run>
+                <include name="TgTest"/>
+                <exclude name="CtgTest"/>
+                <include name="SinTest"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.company.tests.trigonometry.TgTest" />
+            <class name="com.company.tests.trigonometry.CtgTest"/>
+            <class name="com.company.tests.trigonometry.SinTest"/>
         </classes>
     </test>
 </suite>
